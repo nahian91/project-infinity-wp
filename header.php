@@ -38,22 +38,26 @@
                 <div class="col-12 col-sm-6">
                     <div class="header-top__left">
                         <?php 
-                            foreach($header_infos as $info) {
-                                ?>
-                                    <a href="#"><i class="<?php echo $info['header_info_icon'];?>"></i> <?php echo $info['header_info_label'];?></a>
-                                <?php
-                            }
+                            if($header_infos) {
+                                foreach($header_infos as $info) {
+                                    ?>
+                                        <a href="#"><i class="<?php echo $info['header_info_icon'];?>"></i> <?php echo $info['header_info_label'];?></a>
+                                    <?php
+                                }
+                            }                            
                         ?>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 text-right">
                     <div class="header-top__social">        
                         <?php 
-                            foreach($header_socials as $social) {
-                                ?>
-                                    <a href="<?php echo esc_url($social['header_social_url']);?>" target="_blank"><i class="<?php echo esc_attr($social['header_social_icon']);?>"></i></a>
-                                <?php
-                            }
+                            if($header_socials) {
+                                foreach($header_socials as $social) {
+                                    ?>
+                                        <a href="<?php echo esc_url($social['header_social_url']);?>" target="_blank"><i class="<?php echo esc_attr($social['header_social_icon']);?>"></i></a>
+                                    <?php
+                                }
+                            }                            
                         ?>
                     </div>
                 </div>

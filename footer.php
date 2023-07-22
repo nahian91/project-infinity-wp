@@ -11,7 +11,7 @@
 
 ?>
 
-	<!-- Footer -->
+<!-- Footer -->
 <footer class="footer bg" style="background-image: url('assets/img/footer.jpg');">
         <div class="container">
             <div class="grid">
@@ -26,11 +26,13 @@
                         <p class="footer__desc"><?php echo $footer_1['footer_1_description']; ?></p>
                         <div class="footer__social">
                             <?php 
-                                foreach($footer_1['footer_1_socials'] as $social) {
-                                    ?>
-                                        <a href="<?php echo $social['footer_1_social_url'];?>" target="_blank" class="footer__social-link"><i class="<?php echo $social['footer_1_social_icon'];?>"></i></a>
-                                    <?php
-                                }
+                                if($footer_1['footer_1_socials']) {
+                                    foreach($footer_1['footer_1_socials'] as $social) {
+                                        ?>
+                                            <a href="<?php echo $social['footer_1_social_url'];?>" target="_blank" class="footer__social-link"><i class="<?php echo $social['footer_1_social_icon'];?>"></i></a>
+                                        <?php
+                                    }
+                                }                                
                             ?>
                         </div>
                     </div>
