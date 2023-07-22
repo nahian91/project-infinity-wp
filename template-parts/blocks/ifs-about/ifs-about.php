@@ -26,32 +26,26 @@ $team_page_link =  get_field('team_page_link');
 
 ?>
 
-<!-- Teams Start --->
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">	
-    <div class="grid">
-        <?php 
-            if($teams) {
-                foreach($teams as $team) {
-                    ?>
-                    <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('<?php echo esc_url($team['team_image']); ?>');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title"><?php echo $team['team_name']; ?><span class="team__desg"><?php echo $team['team_designation']; ?></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
-                }
-            }
-        ?>
-    </div>
-    <div class="grid">
-        <div class="col-12 text-center mt-30">
-        <a href="<?php echo esc_url($team_page_link); ?>" class="btn btn-primary">
-        View All Members</a>
-        </div>
-    </div>
-</div>
-
-<!-- Teams Section End -->	
+<section class="about pt-80 pb-80">
+   <div class="container">
+      <div class="grid align-center">
+         <div class="col-12 col-md-7">
+            <span class="about__subtitle">about us</span>
+            <h4 class="about__title">We are a Team of Experts to Take your Business to the next level</h4>
+            <p class="about__desc">We started our journey in 2016. Since then, we got the opportunity to work with thousands of clients and hundreds of companies and brands. We are a fast growing and innovative IT services agency. Our experienced team is made up of creative and technical minds with high expertise. </p>
+            <span class="about__item"><i class="fa-solid fa-check-double"></i> Fusce consectetur purus ac aliquam aliquet.</span>
+            <span class="about__item"><i class="fa-solid fa-check-double"></i> Pellentesque non arcu sollicitudin, pellentesque augue id.</span>
+            <span class="about__item"><i class="fa-solid fa-check-double"></i> Vestibulum blandit justo felis dapibus varius more-or-less.</span>
+            <span class="about__item"><i class="fa-solid fa-check-double"></i> Quisque varius tellus a pretium, ac facilisis massa placerat.</span>
+            <span class="about__item"><i class="fa-solid fa-check-double"></i> Lorem consectetur purus ac aliquam aliquet.</span>
+            <a href="" class="btn btn-primary about__btn">read more</a>
+         </div>
+         <div class="col-12 col-md-5">
+            <div class="about__right">
+               <img class="about__img" src="assets/img/about.png" alt="">
+               <p class="about__text">since <br> 2016</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

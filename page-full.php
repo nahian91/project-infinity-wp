@@ -18,7 +18,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area pt-80 pb-80">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 						
 			

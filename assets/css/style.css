@@ -40,7 +40,7 @@ img {
   left: 0;
   top: 0;
   z-index: -1;
-  opacity: 0.95;
+  opacity: 0.85;
 }
 
 .text-center {
@@ -2271,8 +2271,18 @@ input:focus, textarea:focus {
 }
 
 .footer {
-  padding: 60px 0;
+  padding: 160px 0 60px;
   color: #fff;
+  position: relative;
+}
+.footer:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/footer-shape.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
 }
 .footer__title {
   font-size: 26px;

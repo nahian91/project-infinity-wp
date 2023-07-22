@@ -26,32 +26,49 @@ if( !empty($block['align']) ) {
 
 ?>
 
-<!-- Teams Start --->
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">	
-    <div class="grid">
-        <?php 
-            if($teams) {
-                foreach($teams as $team) {
-                    ?>
-                    <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('<?php echo esc_url($team['team_image']); ?>');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title"><?php echo $team['team_name']; ?><span class="team__desg"><?php echo $team['team_designation']; ?></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
-                }
-            }
-        ?>
-    </div>
-    <div class="grid">
-        <div class="col-12 text-center mt-30">
-        <a href="<?php echo esc_url($team_page_link); ?>" class="btn btn-primary">
-        View All Members</a>
-        </div>
-    </div>
-</div>
-
-<!-- Teams Section End -->	
+<section class="bannar bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/hero.jpg');">
+   <div class="container">
+      <div class="grid align-center">
+         <div class="col-md-8">
+            <div class="bannar__content">
+               <span class="bannar__subtitle">custom software development</span>
+               <h1 class="bannar__title">Connecting DOTS <br> Creating LOGICS</h1>
+               <p class="bannar__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error, ullam neque nobis delectus repellat fuga accusantium hic magnam quia.</p>
+               <a href="" class="bannar__btn btn btn-primary">contact us</a>
+               <a href="" class="bannar__btn btn btn-secondary">see projects</a>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <form class="bannar__form">
+               <h4 class="bannar__form-title">appoinment</h4>
+               <div class="bannar__input">
+                  <input type="text" placeholder="Name">
+                  <i class="fa-regular fa-user"></i>
+               </div>
+               <div class="bannar__input">
+                  <input type="email" placeholder="Email">
+                  <i class="fa-regular fa-envelope"></i>
+               </div>
+               <div class="bannar__input">
+                  <input type="text" placeholder="Phone">
+                  <i class="fa-solid fa-phone"></i>
+               </div>
+               <div class="bannar__input">
+                  <select>
+                     <option value="">Select Subject</option>
+                     <option value="">Web Design / Development</option>
+                     <option value="">Software Development</option>
+                     <option value="">Digital Marketing</option>
+                     <option value="">IT Consultancy</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+               </div>
+               <div class="bannar__input">
+                  <textarea placeholder="Message"></textarea>
+               </div>
+               <input class="bannar__input-btn" type="submit" value="make an appoinment">
+            </form>
+         </div>
+      </div>
+   </div>
+</section>
