@@ -1,0 +1,104 @@
+  // /* lexend-regular - latin */
+  // @font-face {
+  //   font-family: 'Lexend';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   src: url('../../font/lexend-v17-latin-600.eot'); /* IE9 Compat Modes */
+  //   src: local(''),
+  //        url('../../font/lexend-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  //        url('../../font/lexend-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  //        url('../../font/lexend-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+  //        url('../../font/lexend-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  //        url('../../font/lexend-v17-latin-regular.svg#Lexend') format('svg'); /* Legacy iOS */
+  // }
+  
+  // /* lexend-600 - latin */
+  // @font-face {
+  //   font-family: 'Lexend';
+  //   font-style: normal;
+  //   font-weight: 600;
+  //   src: url('../../font/lexend-v17-latin-600.eot'); /* IE9 Compat Modes */
+  //   src: local(''),
+  //        url('../../font/lexend-v17-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  //        url('../../font/lexend-v17-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+  //        url('../../font/lexend-v17-latin-600.woff') format('woff'), /* Modern Browsers */
+  //        url('../../font/lexend-v17-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+  //        url('../../font/lexend-v17-latin-600.svg#Lexend') format('svg'); /* Legacy iOS */
+  // }
+  
+  // body{
+  //   font-family: $mainFont;
+  //   font-weight: 400;
+  // }
+  
+  // // heading, paragraph and hyperlink common typography.
+  // h1{
+  //     font: $heading_font_31_400;
+  //     color: $black;
+  //     margin: 18px 0px;
+  //     @include min-small{
+  //       font: $heading_font_45_600;
+  //     }
+  // }  
+  
+  // h2{
+  //     $font: $heading_font_23_400;
+  //     color: $text_color;
+  
+  //     // screen larger than small
+  //     @include min-small{
+  //       $font: $heading_font_45_600;
+  //     }
+  // }
+  
+  // h3{
+  //     $font: $heading_font_20_400;
+  //     color: $text_color;
+  
+  //     // screen larger than small
+  //     @include min-small{
+  //         $font: $heading_font_32_400;
+  //     }
+  // }
+  
+  // h4{
+  //     font: $heading_font_23_400;
+  //     color: $text_color;
+  // }
+  
+  // h5{
+  //     font: $heading_font_20_400;
+  //     color: $text_color;
+  // }
+  
+  // h6{
+  //     font: $text_font_16_400;
+  //     color: $text_color;  
+  // }
+  
+  // p,
+  // div{
+  //   font: $text_font_16_400;
+  //   color: $text_color;
+  
+  //   &.small-alternate{
+  //     font-family: $mainFont;
+  //     font-weight: normal; 
+  //     font-size: 14px; 
+  //     line-height: 20px; 
+  //     color: $black;
+  //   }
+  
+  // }
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@400;600;700;800;900&display=swap');
+body, a{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: #3c4049;
+  font-size: 18px;
+  line-height: 28px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Inter', sans-serif;
+}

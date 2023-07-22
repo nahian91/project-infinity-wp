@@ -1,0 +1,33 @@
+
+.course__box {
+    background-color: #ccf5ef;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .course__content {
+    padding: 24px;
+    border-top: 1px solid #eb5c5c;
+    text-align: center;
+  }
+  .course__content h4 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  .course__content a {
+	display: block;
+	text-align: center;
+	padding: 10px 0 !important;
+	margin-top: 30px;
+	font-weight: 600;
+    transition: .3s;
+    &:hover{
+        color: #eb5c5c;
+    }
+}
+  .course__content span {
+    font-weight: 600;
+  }
+  .course__content p {
+    margin-bottom: 10px;
+  }

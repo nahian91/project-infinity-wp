@@ -1,0 +1,27 @@
+
+.counter {
+    padding: 60px 0;
+    background-color: #333;
+    color: $white;
+  }
+  .counter__single {
+    text-align: center;
+    background-color: #eb5c5c;
+    padding: 40px 40px 30px;
+    border-radius: 8px;
+  }
+  .counter__single h4 {
+    font-size: 25px;
+  }
+  .counter__number {
+    font-size: 50px;
+  }
+  .counter__title {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .counter h4 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }

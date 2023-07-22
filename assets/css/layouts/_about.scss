@@ -1,0 +1,105 @@
+.about {
+    &__subtitle {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    &__title {
+        font-size: 35px;
+        line-height: 45px;
+        text-transform: capitalize;
+    }
+    &__subtitle {
+        color: $primary_color;
+    }
+    &__desc {
+        margin: 20px 0;
+    }
+    &__item {
+        display: block;
+        margin-bottom: 10px;
+        i {
+            color: $primary_color;
+        }
+    }
+    &__btn{
+        margin-top: 15px;
+    }
+    &__right {
+        position: relative;
+        z-index: 2;
+        &:after {
+            display: none;
+            @include min-small{
+                display: block;
+                position: absolute;
+                content: "";
+                background-image: url('../../assets/img/aaa.png');
+                width: 100%;
+                height: 100%;
+                top: -50px;
+                right: -150px;
+                background-size: cover;
+                transform: rotate(185deg);
+                z-index: -1;
+            }
+        }
+    }
+    &__text {
+        position: absolute;
+        background-color: $primary_color;        
+        color: #fff;        
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: 50px;
+        border: 5px solid $white;
+        width: 200px;
+        height: 200px;
+        left: -10px;
+        bottom: -25px;
+        @include min-small{
+            width: 250px;
+            height: 250px;
+            left: -50px;
+            bottom: -100px;
+            font-size: 60px;
+            line-height: 60px;
+            padding-top: 65px;
+        }
+    }
+}
+
+
+.about-bottom {
+    border-top: 1px solid #ddd;
+    padding: 50px 0;
+    &__single {
+        text-align: center;
+        box-shadow: 0px 0px 50px 11px rgba(95, 138, 236, 0.05);
+        padding: 20px 15px;
+        border-bottom: 3px solid transparent;
+        transition: .3s;
+        i {
+            border: 1px solid $primary_color;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            font-size: 18px;
+            color: $primary_color;
+        }
+        &:hover {
+            border-color: $primary_color;
+        }
+    }
+    &__title {
+        text-transform: capitalize;
+        font-size: 26px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+}

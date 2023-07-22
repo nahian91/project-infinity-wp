@@ -1,0 +1,49 @@
+.services {
+  background-color: #fef7f4;
+  &__single {
+    box-shadow: 0px 0px 50px 11px rgba(95, 138, 236, 0.05);
+    padding: 25px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    transition: .3s;
+    background-color: $white;
+    &:hover{
+      border-color: $primary_color;
+      i{
+        border-radius: 50%;
+      }
+    }
+  }
+  &__number {
+    position: absolute;
+right: 20px;
+top: 20px;
+font-size: 50px;
+color: #84799f;
+transition: 0.3s;
+font-weight: 600;
+opacity: .3;
+  }
+  &__icon {
+    color: #2fa78f;
+text-align: center;
+font-size: 25px;
+background-color: #ccf4ef;
+width: 70px;
+height: 70px;
+line-height: 70px;
+transition: .3s;
+  }
+  &__title {
+    font-size: 24px;
+text-transform: capitalize;
+margin-top: 25px;
+margin-bottom: 20px;
+font-weight: 600;
+color: #3c4049;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

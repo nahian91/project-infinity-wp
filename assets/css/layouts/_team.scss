@@ -1,0 +1,33 @@
+.team{
+    background-position: center;
+    background-size: cover;
+    background-color: #fef7f4;
+}
+
+.team__single {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 10px 10px 120px 0 rgba(73,74,83.99999999999999,.1);
+  }
+  .team__img {
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .team__content {
+	text-align: center;
+	padding: 10px 16px 24px;
+}
+  .team__desg {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  .team__title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+  }

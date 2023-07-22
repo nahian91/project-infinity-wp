@@ -1,0 +1,49 @@
+
+.process__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	margin-top: 60px;
+}
+  .process__single {
+    position: relative;
+    text-align: center;
+  }
+  .process__img {
+	max-width: 80px;
+	background-color: #ccf4ef;
+	padding: 15px;
+	border-radius: 7px;
+}
+  .process__single::after {
+	position: absolute;
+	content: "";
+	background-image: url("../img/process/arrow-1.png");
+	width: 100%;
+	height: 60px;
+	right: -120px;
+	top: -60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 150px 30px;
+}
+  
+.process__number {
+    position: absolute;
+    right: -50px;
+    display: block;
+    top: -65px;
+    background-color: #ec6464;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 10px;
+  }
+  .process__single:last-child .process__number, .process__single:last-child:after {
+    display: none;
+  }
+  .process__title {
+	margin: 15px 0;
+}

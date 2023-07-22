@@ -1,0 +1,20 @@
+.cta {
+  position: relative;
+  z-index: 2;
+  padding: 70px 0;
+  color: #fff;
+  background-color: #111;
+  h4 {
+    font-size: 50px;
+text-transform: capitalize;
+line-height: 65px;
+  }
+}
+.cta a {
+	margin: 0 20px;
+}
+.cta p {
+	margin-top: 20px;
+	font-size: 22px;
+	line-height: 32px;
+}
