@@ -1,12 +1,11 @@
 {
-    "key": "group_64b8779034d65",
+    "key": "group_64bbaf84c78b2",
     "title": "Process",
     "fields": [
         {
-            "key": "field_64b87790168c6",
-            "label": "Processes",
-            "name": "processes",
-            "aria-label": "",
+            "key": "field_64bbaf93ab47f",
+            "label": "Process",
+            "name": "process",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -16,19 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
-            "pagination": 0,
+            "collapsed": "",
             "min": 0,
             "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
+            "layout": "block",
+            "button_label": "Add Process",
             "sub_fields": [
                 {
-                    "key": "field_64b877ec168c7",
+                    "key": "field_64bbaf9dab480",
                     "label": "Process Number",
                     "name": "process_number",
-                    "aria-label": "",
                     "type": "number",
                     "instructions": "",
                     "required": 0,
@@ -39,19 +35,17 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "min": "",
-                    "max": "",
                     "placeholder": "",
-                    "step": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_64b87790168c6"
+                    "min": "",
+                    "max": "",
+                    "step": ""
                 },
                 {
-                    "key": "field_64b87800168c8",
+                    "key": "field_64bbafc0ab481",
                     "label": "Process Image",
                     "name": "process_image",
-                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -62,6 +56,7 @@
                         "id": ""
                     },
                     "return_format": "array",
+                    "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -69,15 +64,12 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_64b87790168c6"
+                    "mime_types": ""
                 },
                 {
-                    "key": "field_64b87826168c9",
+                    "key": "field_64bbafd5ab482",
                     "label": "Process Title",
                     "name": "process_title",
-                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -88,17 +80,15 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_64b87790168c6"
+                    "maxlength": ""
                 },
                 {
-                    "key": "field_64b8782f168ca",
+                    "key": "field_64bbafdeab483",
                     "label": "Process Description",
                     "name": "process_description",
-                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -109,11 +99,10 @@
                         "id": ""
                     },
                     "default_value": "",
+                    "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_64b87790168c6"
+                    "new_lines": ""
                 }
             ]
         }
@@ -135,6 +124,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0,
-    "modified": 1689811009
+    "modified": 1690021875
 }

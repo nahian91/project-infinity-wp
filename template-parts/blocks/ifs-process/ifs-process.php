@@ -21,7 +21,7 @@ if( !empty($block['align']) ) {
 
 // Load values and assing defaults.
 
-$processes =  get_field('processes');
+$process =  get_field('process');
 
 ?>
 
@@ -32,8 +32,8 @@ $processes =  get_field('processes');
          <div class="col-12">
             <div class="process__list">
                 <?php 
-                    if($processes) {
-                        foreach($processes as $process) {
+                    if($process) {
+                        foreach($process as $process) {
                             ?>
                             <div class="process__single">
                                 <span class="process__number"><?php echo $process['process_number'];?></span>

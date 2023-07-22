@@ -27,7 +27,7 @@ $team_page_link =  get_field('team_page_link');
 ?>
 
 <!-- Teams Start --->
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">	
+<div id="<?php echo esc_attr($id); ?>" class="container <?php echo esc_attr($className); ?>">	
     <div class="grid">
         <?php 
             if($teams) {
@@ -46,12 +46,18 @@ $team_page_link =  get_field('team_page_link');
             }
         ?>
     </div>
-    <div class="grid">
-        <div class="col-12 text-center mt-30">
-        <a href="<?php echo esc_url($team_page_link); ?>" class="btn btn-primary">
-        View All Members</a>
-        </div>
-    </div>
+    <?php
+        if($team_page_link) {
+            ?>
+            <div class="grid">
+                <div class="col-12 text-center mt-30">
+                <a href="<?php echo esc_url($team_page_link); ?>" class="btn btn-primary">
+                View All Members</a>
+                </div>
+            </div>
+            <?php
+        }
+    ?>
 </div>
 
 <!-- Teams Section End -->	

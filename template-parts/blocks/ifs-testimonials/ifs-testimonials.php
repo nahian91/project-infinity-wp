@@ -26,7 +26,7 @@ $testimonials =  get_field('testimonials');
 ?>
 
 <!-- Teams Start --->
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">	
+<div id="<?php echo esc_attr($id); ?>" class="container <?php echo esc_attr($className); ?>">	
     <div class="grid">
         <div class="col-12">
             <div class="testimonial__slider">

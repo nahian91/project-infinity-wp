@@ -28,10 +28,10 @@ $section_description =  get_field('section_description');
 ?>
 
 <!-- Section Title Start --->
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">	
+<div id="<?php echo esc_attr($id); ?>">	
     <div class="grid">
          <div class="col-12">
-            <div class="section-title">
+            <div class="<?php echo esc_attr($className); ?>">
                <span class="section-title__sub"><?php echo $section_subtitle;?></span>
                <h4 class="section-title__title"><?php echo $section_title;?></h4>
                <p class="section-title__desc"><?php echo $section_description;?></p>
