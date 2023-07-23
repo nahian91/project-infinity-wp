@@ -3,8 +3,8 @@
     "title": "Courses",
     "fields": [
         {
-            "key": "field_64b5e46e23356",
-            "label": "Course Info",
+            "key": "field_64bcb5ef35a46",
+            "label": "Course Infos",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -20,7 +20,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_64b5ebeee1bfb",
+            "key": "field_64bcb5fd35a47",
             "label": "Course Price",
             "name": "course_price",
             "aria-label": "",
@@ -29,7 +29,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "30",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -40,138 +40,16 @@
             "append": ""
         },
         {
-            "key": "field_64b5f08e325b8",
-            "label": "Course Class",
-            "name": "course_class",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "30",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_64b5f0a0325b9",
-            "label": "Course Duration",
-            "name": "course_duration",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "30",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_64b5edd1e3a4f",
+            "key": "field_64bcb60a35a48",
             "label": "Course Description",
             "name": "course_description",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_64b5ed37d0b31",
-            "label": "Course Teacher",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_64b5edf75b10c",
-            "label": "Course Teacher Name",
-            "name": "course_teacher_name",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_64b5ee0e5b10d",
-            "label": "Course Teacher Image",
-            "name": "course_teacher_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "30",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "",
-            "library": "",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_64b5ee205b10e",
-            "label": "Course Teacher Description",
-            "name": "course_teacher_description",
             "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -182,8 +60,85 @@
             "new_lines": ""
         },
         {
-            "key": "field_64b5ed46d0b32",
-            "label": "Course Syllabus",
+            "key": "field_64bcb68e7683f",
+            "label": "Course Duration",
+            "name": "course_duration",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64bcb69976840",
+            "label": "Course Classes",
+            "name": "course_classes",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "29",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64bcb6a876841",
+            "label": "Course Week",
+            "name": "course_week",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64bcbadbd2fac",
+            "label": "Course Enroll Link",
+            "name": "course_enroll_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_64bcb318cea33",
+            "label": "Course Instructor",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -195,15 +150,80 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "placement": "left",
             "endpoint": 0
         },
         {
-            "key": "field_64b5ee9b46303",
-            "label": "Course Syllabus List",
-            "name": "course_syllabus_list",
+            "key": "field_64bcb4accea34",
+            "label": "Course Instructor Name",
+            "name": "course_instructor_name",
             "aria-label": "",
-            "type": "repeater",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64bcb4b5cea35",
+            "label": "Course Instructor Image",
+            "name": "course_instructor_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64bcb4c5cea36",
+            "label": "Course Instructor Description",
+            "name": "course_instructor_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_64bcb52eee019",
+            "label": "Course Includes & Requirements",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -212,18 +232,146 @@
                 "class": "",
                 "id": ""
             },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64bcb6cd595d0",
+            "label": "Course Syllabus",
+            "name": "course_syllabus",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_64bcb6cd595d1",
+            "button_label": "Add Includes",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64bcb6cd595d1",
+                    "label": "Course Syllabus Title",
+                    "name": "course_syllabus_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64bcb6cd595d0"
+                }
+            ]
+        },
+        {
+            "key": "field_64bcb571c7051",
+            "label": "Course Includes",
+            "name": "course_includes",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
             "layout": "table",
             "pagination": 0,
             "min": 0,
             "max": 0,
             "collapsed": "",
-            "button_label": "Add Course Syllabus",
+            "button_label": "Add Includes",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_64b5eeab46304",
-                    "label": "Course Syllabus Name",
-                    "name": "course_syllabus_name",
+                    "key": "field_64bcb580c7052",
+                    "label": "Course Includes Title",
+                    "name": "course_includes_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64bcb571c7051"
+                },
+                {
+                    "key": "field_64bcb64e35a49",
+                    "label": "Course Includes Value",
+                    "name": "course_includes_value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64bcb571c7051"
+                }
+            ]
+        },
+        {
+            "key": "field_64bcb58fc7053",
+            "label": "Course Requirements",
+            "name": "course_requirements",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Requirements",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64bcb58fc7054",
+                    "label": "Course Requirements Title",
+                    "name": "course_requirements_title",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -239,90 +387,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_64b5ee9b46303"
-                }
-            ]
-        },
-        {
-            "key": "field_64b5ed97d0b33",
-            "label": "Course Summary",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "left",
-            "endpoint": 0
-        },
-        {
-            "key": "field_64b5ef67ba747",
-            "label": "Course Summary List",
-            "name": "course_summary_list",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Course Summary",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_64b5ef7aba748",
-                    "label": "Course Summary Name",
-                    "name": "course_summary_name",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_64b5ef67ba747"
-                },
-                {
-                    "key": "field_64b5ef9cba749",
-                    "label": "Course Summary Value",
-                    "name": "course_summary_value",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_64b5ef67ba747"
+                    "parent_repeater": "field_64bcb58fc7053"
                 }
             ]
         }
@@ -345,5 +410,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689819104
+    "modified": 1690090819
 }

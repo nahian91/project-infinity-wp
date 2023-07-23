@@ -209,8 +209,8 @@ function my_acf_init_block_types() {
 
 			  // register courses block.
 			acf_register_block_type(array(
-				'name'              => 'courses',
-				'title'             => __('Courses', 'ifs'),
+				'name'              => 'course',
+				'title'             => __('Course', 'ifs'),
 				'description'       => __('A Courses block inside the page', 'ifs'),
 				'render_callback'   => 'my_acf_block_render_callback',
 				'category'          => 'formatting',
@@ -282,6 +282,17 @@ function my_acf_init_block_types() {
 				'category'          => 'formatting',
 				'icon'              => 'admin-comments',
 				'keywords'          => array( 'hero', 'ifs' ),
+			  ));
+
+			  // register clients block.
+			acf_register_block_type(array(
+				'name'              => 'lients',
+				'title'             => __('Clients', 'ifs'),
+				'description'       => __('A Clients block inside the page', 'ifs'),
+				'render_callback'   => 'my_acf_block_render_callback',
+				'category'          => 'formatting',
+				'icon'              => 'admin-comments',
+				'keywords'          => array( 'clients', 'ifs' ),
 			  ));
       	}
   	}

@@ -28,7 +28,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
+                "value": "acf\/lients"
             }
         ]
     ],
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690071545
+    "modified": 1690071660
 }
