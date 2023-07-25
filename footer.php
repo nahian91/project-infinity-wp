@@ -11,8 +11,33 @@
 
 ?>
 
-<!-- Footer -->
-<footer class="footer bg" style="background-image: url('assets/img/footer.jpg');">
+    <?php 
+        $footer_clients = get_field('footer_clients', 'option');
+        
+    ?>
+    <section class="clients-area pt-30 pb-30">
+        <div class="container">
+            <div class="grid">
+                <div class="col-md-12">
+                    <div class="clients">
+                        <?php 
+                            if($footer_clients) {
+                                foreach($footer_clients as $client){
+                                    ?>
+                                        <div class="single-clients">
+                                            <img src="<?php echo $client['client_image']['sizes']['medium'];?>" alt="">
+                                        </div>
+                                    <?php 
+                                }
+                            }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg" style="background-image: url('assets/img/footer.jpg');">
         <div class="container">
             <div class="grid">
                 <div class="col-md-4 col-sm-6">
@@ -82,21 +107,23 @@
     <section class="footer-bottom">
         <div class="container">
             <div class="grid align-center">
-                <div class="col-sm-4">
+                <div class="col-sm-12">
                     <div class="footer-bottom__copy">
                         <p>&copy; 2023. All Rights Reserved.</p>
                     </div>
                 </div>
+                <!--
                 <div class="col-sm-8 text-right">
                     <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'menu-4',
-                                'menu_class'     => 'footer-bottom__menu',
-                            )
-                        );
+                        // wp_nav_menu(
+                        //     array(
+                        //         'theme_location' => 'menu-4',
+                        //         'menu_class'     => 'footer-bottom__menu',
+                        //     )
+                        // );
                     ?>
                 </div>
+                -->
             </div>
         </div>
     </section>

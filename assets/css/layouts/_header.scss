@@ -37,10 +37,7 @@
 .header{
     position: relative;
     z-index: 99;
-    padding: 20px 0;
-    @include min-small{
-        padding: 0;
-    }
+    padding: 10px 0;
     &.sticky{
         position: fixed;
         top: 50px;

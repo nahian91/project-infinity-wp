@@ -34,7 +34,17 @@ img{
         left: 0;
         top: 0;
         z-index: -1;
-        opacity: .85;
+        opacity: .95;
+    }
+    &.bg-cta{
+        background-image: url('../../assets/img/cta-bg.png');
+        .section-title__sub{
+            background-color: $primary_color;
+            color: $white;
+            padding: 5px 20px;
+            border-radius: 7px;
+            font-size: 16px;
+        }
     }
 }
 
@@ -84,12 +94,17 @@ img{
         }
     }
 }
-.pt-80{
-    padding-top: 80px;
-}
-.pb-80{
-    padding-bottom: 80px;
-}
-.mt-30{
-    margin-top: 30px;
+@for $i from 1 through 10{
+    .pt-#{$i * 10} {
+        padding-top: $i * 10px;
+    }
+    .pb-#{$i * 10} {
+        padding-bottom: $i * 10px;
+    }
+    .mt-#{$i * 10} {
+        margin: $i * 10px;
+    }
+    .mt-#{$i * 10} {
+        margin-top: $i * 10px;
+    }
 }

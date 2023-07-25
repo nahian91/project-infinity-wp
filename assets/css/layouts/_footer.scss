@@ -1,16 +1,6 @@
 .footer {
-    padding: 160px 0 60px;
+    padding: 60px 0;
     color: #fff;
-    position: relative;
-    &:before{
-        content: "";
-        position: absolute;
-        background-image: url('../img/footer-shape.png');
-        background-position: top;
-        background-repeat: no-repeat;
-        top: 0;
-        left: 0;
-    }
     &__title{
         font-size: 26px;
         text-transform: capitalize;
@@ -21,11 +11,6 @@
         @include min-medium{
             font-size: 22px;
             margin-bottom: 15px;
-            padding-bottom: 10px;
-        }
-        @include min-large{
-            font-size: 26px;
-            margin-bottom: 25px;
             padding-bottom: 15px;
         }
         &:before {
@@ -74,11 +59,13 @@
             padding-bottom: 10px;
             border-bottom: 1px dashed #555;
             position: relative;
+            font-size: 17px;
             a{
                 color: #fff;
                 position: relative;
                 padding-left: 25px;
                 text-transform: capitalize;
+                font-size: 17px;
                 &:before {
                     content: "\f061";
                     font-family: "Font Awesome 5 Free";
@@ -107,9 +94,6 @@
     padding: 10px 0;
     &__copy{
         text-align: center;
-        @include min-small{
-            text-align: left;
-        }
     }
 }
 
@@ -147,4 +131,11 @@
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
+}
+.clients-area {
+    background-color: #fff;
+}
+.single-clients img {
+    max-width: 110px;
+    margin: 0 auto;
 }

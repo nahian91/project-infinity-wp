@@ -92,12 +92,16 @@
   // }
 
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@400;600;700;800;900&display=swap');
-body, a{
+body{
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   color: #3c4049;
   font-size: 18px;
   line-height: 28px;
+  background-color: #fef7f4;
+}
+a{
+  color: #3c4049;
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Inter', sans-serif;

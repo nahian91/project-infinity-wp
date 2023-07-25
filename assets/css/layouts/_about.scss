@@ -103,3 +103,29 @@
         margin: 10px 0;
     }
 }
+
+.single_about {
+    box-shadow: 10px 10px 120px 0 rgba(73, 74, 84, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .single_about i {
+    color: $primary_color;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .single_about {
+    margin: 20px 0;
+  }
+  .single_about h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .single_about p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }

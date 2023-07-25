@@ -28,7 +28,7 @@ $counters =  get_field('counters');
 
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image:url('../assets/img/cta-bg.png');">
    <div class="container">
       <div class="grid align-center">
          <div class="col-md-6">

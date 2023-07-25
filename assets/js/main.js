@@ -6,7 +6,15 @@ jQuery(document).ready(function ($) {
     dots: true,
     prevArrow:'<i class=" fas fa-angle-right"></i>',
     nextArrow:'<i class="fas fa-angle-left"></i>'
-  })
+  });
+
+  $(".clients").slick({
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+  });
 
   // Counter
   $(".counter__number").counterUp({
