@@ -21,9 +21,12 @@ if( !empty($block['align']) ) {
 
 // Load values and assing defaults.
 
-// $teams =  get_field('teams');
-// $team_page_link =  get_field('team_page_link');
-
+$hero_subtitle =  get_field('hero_subtitle');
+$hero_title =  get_field('hero_title');
+$hero_description =  get_field('hero_description');
+$hero_button_1 =  get_field('hero_button_1');
+$hero_button_2 =  get_field('hero_button_2');
+$hero_form =  get_field('hero_form');
 ?>
 
 <section class="bannar bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/hero.jpg');">
@@ -31,43 +34,15 @@ if( !empty($block['align']) ) {
       <div class="grid align-center">
          <div class="col-md-8">
             <div class="bannar__content">
-               <span class="bannar__subtitle">custom software development</span>
-               <h1 class="bannar__title">Connecting DOTS <br> Creating LOGICS</h1>
-               <p class="bannar__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error, ullam neque nobis delectus repellat fuga accusantium hic magnam quia.</p>
-               <a href="" class="bannar__btn btn btn-primary">contact us</a>
-               <a href="" class="bannar__btn btn btn-secondary">see projects</a>
+               <span class="bannar__subtitle"><?php echo $hero_subtitle; ?></span>
+               <h1 class="bannar__title"><?php echo $hero_title; ?></h1>
+               <p class="bannar__desc"><?php echo $hero_description; ?></p>
+               <a href="<?php echo $hero_button_1['hero_button_1_url']; ?>" class="bannar__btn btn btn-primary"><?php echo $hero_button_1['hero_button_1_label']; ?></a>
+               <a href="<?php echo $hero_button_2['hero_button_2_url']; ?>" class="bannar__btn btn btn-secondary"><?php echo $hero_button_2['hero_button_2_label']; ?></a>
             </div>
          </div>
          <div class="col-md-4">
-            <form class="bannar__form">
-               <h4 class="bannar__form-title">appoinment</h4>
-               <div class="bannar__input">
-                  <input type="text" placeholder="Name">
-                  <i class="fa-regular fa-user"></i>
-               </div>
-               <div class="bannar__input">
-                  <input type="email" placeholder="Email">
-                  <i class="fa-regular fa-envelope"></i>
-               </div>
-               <div class="bannar__input">
-                  <input type="text" placeholder="Phone">
-                  <i class="fa-solid fa-phone"></i>
-               </div>
-               <div class="bannar__input">
-                  <select>
-                     <option value="">Select Subject</option>
-                     <option value="">Web Design / Development</option>
-                     <option value="">Software Development</option>
-                     <option value="">Digital Marketing</option>
-                     <option value="">IT Consultancy</option>
-                  </select>
-                  <i class="fa-solid fa-chevron-down"></i>
-               </div>
-               <div class="bannar__input">
-                  <textarea placeholder="Message"></textarea>
-               </div>
-               <input class="bannar__input-btn" type="submit" value="make an appoinment">
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="511" title="Home Form"]'); ?>
          </div>
       </div>
    </div>

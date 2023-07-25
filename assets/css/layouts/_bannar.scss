@@ -2,7 +2,7 @@
     color: #fff;
     padding: 40px 0;  
     @include min-small{
-        padding: 120px 0;
+        padding: 90px 0 180px;
     }  
     &__subtitle {
         position: relative;
@@ -38,8 +38,8 @@
     }
     &__desc {
         margin: 20px 0;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 26px;
+        line-height: 40px;
     }
     &__btn {
         margin-top: 30px;

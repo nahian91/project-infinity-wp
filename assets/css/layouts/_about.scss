@@ -3,6 +3,9 @@
         font-size: 20px;
         text-transform: capitalize;
         font-weight: 500;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        display: block;
     }
     &__title {
         font-size: 35px;
@@ -25,25 +28,13 @@
     &__btn{
         margin-top: 15px;
     }
-    &__right {
+    &__top {
         position: relative;
         z-index: 2;
-        &:after {
-            display: none;
-            @include min-small{
-                display: block;
-                position: absolute;
-                content: "";
-                background-image: url('../../assets/img/aaa.png');
-                width: 100%;
-                height: 100%;
-                top: -50px;
-                right: -150px;
-                background-size: cover;
-                transform: rotate(185deg);
-                z-index: -1;
-            }
-        }
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: -100px;
     }
     &__text {
         position: absolute;
@@ -107,17 +98,15 @@
 .single_about {
     box-shadow: 10px 10px 120px 0 rgba(73, 74, 84, 0.1);
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     align-items: center;
+    border-left: 3px solid $primary_color;
   }
   .single_about i {
     color: $primary_color;
     font-size: 25px;
     margin-right: 20px;
-  }
-  .single_about {
-    margin: 20px 0;
   }
   .single_about h4 {
     text-transform: capitalize;
@@ -129,3 +118,35 @@
     line-height: 24px;
     margin-top: 10px;
   }
+  
+  .about__right-img {
+	position: relative;
+	margin-left: 40px;
+}
+  .about__right {
+    position: relative;
+  }
+  .about__right span {
+    background-color: #2fa78f;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 30px;
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: -80px;
+    line-height: 55px;
+    border-radius: 25px;
+  }
+  .about__right-img img:nth-child(2) {
+	position: absolute;
+	right: -100px;
+	bottom: -130px;
+}
+.about__right-img img {
+	border: 3px solid $primary_color;
+	border-radius: 12px;
+}

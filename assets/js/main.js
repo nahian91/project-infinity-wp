@@ -26,11 +26,11 @@ jQuery(document).ready(function ($) {
   $('#menu').slicknav();
 });
 
-$(window).scroll(function () {
-  var winTop = $(window).scrollTop();
+jQuery(window).scroll(function () {
+  var winTop = jQuery(window).scrollTop();
   if (winTop >= 30) {
-    $(".header").addClass("sticky");
+    jQuery(".header").addClass("sticky");
   } else {
-    $(".header").removeClass("sticky");
+    jQuery(".header").removeClass("sticky");
   } 
 });

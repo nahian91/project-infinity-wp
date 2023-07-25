@@ -21,46 +21,58 @@ if( !empty($block['align']) ) {
 
 // Load values and assing defaults.
 
-// $teams =  get_field('teams');
+$about_subtitle =  get_field('about_subtitle');
+$about_title =  get_field('about_title');
+$about_description =  get_field('about_description');
+$about_features =  get_field('about_features');
+$about_button =  get_field('about_button');
+$abouts =  get_field('abouts');
 
 ?>
 
-<section class="about pt-80 pb-80">
+<section class="about pb-100">
    <div class="container">
       <div class="grid align-center">
+         <div class="col-md-12">
+            <div class="about__top">
+               <?php 
+                  if($abouts) {
+                     foreach($abouts as $about) {
+                        ?>
+                        <div class="single_about">
+                           <i class="<?php echo $about['about_icon'];?>"></i>
+                           <div class="single-about-content">
+                              <h4><?php echo $about['about_title'];?></h4>
+                              <p><?php echo $about['about_description'];?></p>
+                           </div>
+                        </div>
+                        <?php 
+                     }
+                  }
+               ?>
+            </div>
+         </div>
          <div class="col-12 col-md-7">
-            <span class="about__subtitle">about us</span>
-            <h4 class="about__title">We are a Team of Experts to Take your Business to the next level</h4>
-            <p class="about__desc">We started our journey in 2016. Since then, we got the opportunity to work with thousands of clients and hundreds of companies and brands. We are a fast growing and innovative IT services agency. Our experienced team is made up of creative and technical minds with high expertise. </p>
-            <span class="about__item"><i class="fa-solid fa-check-double"></i> Fusce consectetur purus ac aliquam aliquet.</span>
-            <span class="about__item"><i class="fa-solid fa-check-double"></i> Pellentesque non arcu sollicitudin, pellentesque augue id.</span>
-            <span class="about__item"><i class="fa-solid fa-check-double"></i> Vestibulum blandit justo felis dapibus varius more-or-less.</span>
-            <span class="about__item"><i class="fa-solid fa-check-double"></i> Quisque varius tellus a pretium, ac facilisis massa placerat.</span>
-            <span class="about__item"><i class="fa-solid fa-check-double"></i> Lorem consectetur purus ac aliquam aliquet.</span>
-            <a href="" class="btn btn-primary about__btn">read more</a>
+            <span class="about__subtitle"><?php echo $about_subtitle;?></span>
+            <h4 class="about__title"><?php echo $about_title;?></h4>
+            <p class="about__desc"><?php echo $about_description;?></p>
+            <?php 
+               if($about_features) {
+                  foreach($about_features as $feature) {
+                     ?>
+                        <span class="about__item"><i class="fa-solid fa-check-double"></i> <?php echo $feature['about_feature_title']; ?></span>
+                     <?php 
+                  }
+               }
+            ?>
+            <a href="<?php echo $about_button['about_button_link'];?>" class="btn btn-primary about__btn"><?php echo $about_button['about_button_label'];?></a>
          </div>
          <div class="col-12 col-md-5">
             <div class="about__right">
-               <div class="single_about">
-                  <i class="fa fa-laptop"></i>
-                  <div class="single-about-content">
-                     <h4>our mission</h4>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
-                  </div>
-               </div>
-               <div class="single_about">
-                  <i class="fa fa-user"></i>
-                  <div class="single-about-content">
-                     <h4>our vission</h4>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
-                  </div>
-               </div>
-               <div class="single_about">
-                  <i class="fa fa-pencil"></i>
-                  <div class="single-about-content">
-                     <h4>our history</h4>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
-                  </div>
+               <span>Since <br> 2016</span>
+               <div class="about__right-img">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/about.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/about-1.jpg" alt="">
                </div>
             </div>
          </div>
