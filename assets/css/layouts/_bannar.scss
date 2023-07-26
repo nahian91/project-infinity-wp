@@ -83,18 +83,24 @@
         font-weight: 700;
         margin-bottom: 15px;
     }
+    textarea{
+        height: 80px;
+        resize: none;
+    }
+    br{
+        display: none;
+    }
     &__input-btn{
         background-color: $primary_color;
         width: 100%;
         border: 0;
         padding: 10px;
         cursor: pointer;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: 600;
         color: #fff;
         font-size: 16px;
         transition: .3s;
-        font-family: 'poppins';
         &:hover{
             background-color: #333;
         }

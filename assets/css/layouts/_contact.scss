@@ -18,7 +18,10 @@
 	box-shadow: 0px 0px 50px 11px rgba(95, 138, 236, 0.05);
 	background-color: #fff;
 	padding: 25px;
-  flex-basis: 32%;
+  flex-basis:100%;
+  @include min-small {
+    flex-basis: 32%;
+  }
 }
   .contact__box i {
     color: #eb5c5c;

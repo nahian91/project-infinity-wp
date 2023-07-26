@@ -9,20 +9,34 @@
     text-align: center;
     background-color: #eb5c5c;
     padding: 40px 40px 30px;
+    padding: 20px 20px 25px;
     border-radius: 8px;
+    @include min-small{
+      padding: 40px 40px 30px;
+    }
   }
   .counter__single h4 {
     font-size: 25px;
   }
   .counter__number {
-    font-size: 50px;
+    font-size: 25px;
+    @include min-small {
+      font-size: 50px;
+    }
   }
   .counter__title {
-    font-size: 22px;
-    margin-top: 15px;
+    font-size: 18px;
+    margin-top: 0;
+    @include min-small {
+      font-size: 22px;
+      margin-top: 15px;
+    }
   }
   .counter h4 {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    @include min-small {
+      margin-bottom: 15;
+    }
   }

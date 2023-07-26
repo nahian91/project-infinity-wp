@@ -21,7 +21,7 @@ get_header();
 							$course_instructor_image =  get_field('course_instructor_image', get_the_ID());
 							$course_instructor_description =  get_field('course_instructor_description', get_the_ID());
 							$course_price =  get_field('course_price', get_the_ID());
-							$course_class =  get_field('course_class', get_the_ID());
+							$course_classes =  get_field('course_classes', get_the_ID());
 							$course_duration =  get_field('course_duration', get_the_ID());
 							$course_week =  get_field('course_week', get_the_ID());
 							$course_enroll_link =  get_field('course_enroll_link', get_the_ID());
@@ -36,7 +36,7 @@ get_header();
 									<p><?php echo $course_description;?></p>
 									<br>
 									<ul class="course__sum">
-										<li><?php echo $course_class;?></li>
+										<li><?php echo $course_classes;?></li>
 										<li><?php echo $course_duration;?></li>
 										<li><?php echo $course_week;?></li>
 									</ul>

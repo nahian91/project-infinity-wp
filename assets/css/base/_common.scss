@@ -102,9 +102,15 @@ img{
         padding-bottom: $i * 10px;
     }
     .mt-#{$i * 10} {
-        margin: $i * 10px;
-    }
-    .mt-#{$i * 10} {
         margin-top: $i * 10px;
     }
+    .mb-#{$i * 10} {
+        margin-bottom: $i * 10px;
+    }
+}
+.bg-white{
+    background-color: $white;
+}
+.border-top{
+    border-top: 3px solid $primary_color;
 }

@@ -35,9 +35,14 @@
 }
 
 .header{
-    position: relative;
-    z-index: 99;
-    padding: 10px 0;
+    position: absolute;
+    z-index: 999;
+    padding: 5px;
+    top: 0;
+    left: -20px;
+    @include min-small{
+        position: static;
+    }
     &.sticky{
         position: fixed;
         top: 50px;
@@ -46,8 +51,10 @@
         background-color: $white;
         transition: .3s;
         box-shadow: 0 1px 0 rgba(0,0,0,.2);
+        display: none;
         @include min-small{
             top: 0;
+            display: block;
         }
     }
     &__logo {
@@ -130,6 +137,11 @@
                         right: 0;
                         top: 35px;
                         font-size: 12px;
+                    }
+                }
+                &.current_page_item{
+                    a{
+                        color: $primary_color;
                     }
                 }
             }

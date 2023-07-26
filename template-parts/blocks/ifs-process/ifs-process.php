@@ -27,7 +27,8 @@ $process =  get_field('process');
 
 <!-- Process Start --->
 
-<div id="<?php echo esc_attr($id); ?>" class="container <?php echo esc_attr($className); ?>">	
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">	
+    <div class="container">
     <div class="grid">
          <div class="col-12">
             <div class="process__list">
@@ -48,6 +49,7 @@ $process =  get_field('process');
             </div>
          </div>
       </div>
+    </div>
 </div>
 
 <!-- Process Section End -->	

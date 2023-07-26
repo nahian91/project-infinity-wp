@@ -6,3 +6,9 @@ input:focus, textarea:focus {
     outline: none !important;
     border-color: #2fa78f;
  }
+ .about.mt-100 {
+	margin-top: 0;
+    @include min-small {
+        margin-top: 100px;
+    }
+}

@@ -30,7 +30,7 @@ $abouts =  get_field('abouts');
 
 ?>
 
-<section class="about pb-100">
+<section class="<?php echo esc_attr($className); ?>">
    <div class="container">
       <div class="grid align-center">
          <div class="col-md-12">

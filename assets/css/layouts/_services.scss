@@ -16,31 +16,31 @@
   }
   &__number {
     position: absolute;
-right: 20px;
-top: 20px;
-font-size: 50px;
-color: #84799f;
-transition: 0.3s;
-font-weight: 600;
-opacity: .3;
+    right: 20px;
+    top: 20px;
+    font-size: 50px;
+    color: #84799f;
+    transition: 0.3s;
+    font-weight: 600;
+    opacity: .3;
   }
   &__icon {
     color: #2fa78f;
-text-align: center;
-font-size: 25px;
-background-color: #ccf4ef;
-width: 70px;
-height: 70px;
-line-height: 70px;
-transition: .3s;
+    text-align: center;
+    font-size: 25px;
+    background-color: #ccf4ef;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: .3s;
   }
   &__title {
     font-size: 24px;
-text-transform: capitalize;
-margin-top: 25px;
-margin-bottom: 20px;
-font-weight: 600;
-color: #3c4049;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #3c4049;
   }
   &__desc {
     font-size: 18px;
