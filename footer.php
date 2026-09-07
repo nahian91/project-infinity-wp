@@ -11,93 +11,53 @@
 
 ?>
 
-    <?php 
-        $footer_clients = get_field('footer_clients', 'option');
-        
-    ?>
-    <section class="clients-area pt-30 pb-30">
-        <div class="container">
-            <div class="grid">
-                <div class="col-md-12">
-                    <div class="clients">
-                        <?php 
-                            if($footer_clients) {
-                                foreach($footer_clients as $client){
-                                    ?>
-                                        <div class="single-clients">
-                                            <img src="<?php echo $client['client_image']['sizes']['medium'];?>" alt="">
-                                        </div>
-                                    <?php 
-                                }
-                            }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer bg" style="background-image: url('assets/img/footer.jpg');">
+   <footer class="footer bg" style="background-image: url('assets/img/footer.jpg');">
         <div class="container">
             <div class="grid">
                 <div class="col-md-4 col-sm-6">
-                    <?php
-                        $footer_1 = get_field('footer_1', 'option');
-                        $footer_2_3 = get_field('footer_2_3', 'option');
-                        $footer_4 = get_field('footer_4', 'option');
-                    ?>
-                    <div class="footer__single">
-                        <h4 class="footer__title"><?php echo $footer_1['footer_1_label']; ?></h4>
-                        <p class="footer__desc"><?php echo $footer_1['footer_1_description']; ?></p>
+                                        <div class="footer__single">
+                        <h4 class="footer__title">about company</h4>
+                        <p class="footer__desc">Only one door to knock for every software, website, and e-commerce solution for your business</p>
                         <div class="footer__social">
-                            <?php 
-                                if($footer_1['footer_1_socials']) {
-                                    foreach($footer_1['footer_1_socials'] as $social) {
-                                        ?>
-                                            <a href="<?php echo $social['footer_1_social_url'];?>" target="_blank" class="footer__social-link"><i class="<?php echo $social['footer_1_social_icon'];?>"></i></a>
-                                        <?php
-                                    }
-                                }                                
-                            ?>
-                        </div>
+                                                    </div>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-6">
                     <div class="footer__single">
-                        <h4 class="footer__title"><?php echo $footer_2_3['footer_2_label'];?></h4>
-                        <?php
-                            wp_nav_menu(
-                                array(
-                                    'theme_location' => 'menu-2',
-                                )
-                            );
-                        ?>
-                    </div>
+                        <h4 class="footer__title">quick links</h4>
+                        <div class="menu-footer-1-container"><ul id="menu-footer-1" class="menu"><li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a href="https://infinityflamesoft.com/about-us/">About Us</a></li>
+<li id="menu-item-623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-623"><a href="https://infinityflamesoft.com/courses-2/">Courses</a></li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="https://infinityflamesoft.com/courses/">Courses</a></li>
+<li id="menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624"><a href="https://infinityflamesoft.com/projects/">Projects</a></li>
+<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="https://infinityflamesoft.com/?page_id=174">Teams-1</a></li>
+<li id="menu-item-625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-625"><a href="https://infinityflamesoft.com/contact/">Contact</a></li>
+<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="https://infinityflamesoft.com/services/">Services</a></li>
+<li id="menu-item-626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-626"><a href="https://infinityflamesoft.com/teams/">Teams</a></li>
+<li id="menu-item-627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627"><a href="https://infinityflamesoft.com/services-2/">Services</a></li>
+</ul></div>                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footer__single">
-                        <h4 class="footer__title"><?php echo $footer_2_3['footer_3_label'];?></h4>
-                        <?php
-                            wp_nav_menu(
-                                array(
-                                    'theme_location' => 'menu-3',
-                                )
-                            );
-                        ?>
-                    </div>
+                        <h4 class="footer__title">our services</h4>
+                        <div class="menu-footer-2-container"><ul id="menu-footer-2" class="menu"><li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="https://infinityflamesoft.com/?page_id=174">Teams-1</a></li>
+<li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="https://infinityflamesoft.com/contact/">Contact</a></li>
+<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="https://infinityflamesoft.com/courses/">Courses</a></li>
+<li id="menu-item-630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630"><a href="https://infinityflamesoft.com/teams/">Teams</a></li>
+<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-173 current_page_item menu-item-194"><a href="https://infinityflamesoft.com/contact-us/" aria-current="page">Contact Us</a></li>
+<li id="menu-item-631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-631"><a href="https://infinityflamesoft.com/about-us-2/">About Us</a></li>
+<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628"><a href="https://infinityflamesoft.com/courses-2/">Courses</a></li>
+</ul></div>                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footer__single footer__single--contact">
-                        <h4 class="footer__title"><?php echo $footer_4['footer_4_label'];?></h4>
+                        <h4 class="footer__title">contact us</h4>
                         <ul>
-                            <?php
-                                foreach($footer_4['footer_4_list'] as $single) {
-                                    ?>
-                                        <li class="footer__list"><i class="<?php echo $single['footer_4_icon']; ?>"></i> <?php echo $single['footer_4_info']; ?></li>
-                                    <?php
-                                }
-                            ?>
-                         </ul>
+                                                                    <li class="footer__list"><i class="fa fa-map-marker-alt"></i> 513, Rangmohol Tower, <br> Bandor Bazar, Sylhet</li>
+                                                                            <li class="footer__list"><i class="fa-regular fa-envelope"></i> faisal.lu.ac@gmail.com <br>
+nahiansylhet@gmail.com</li>
+                                                                            <li class="footer__list"><i class="fa fa-mobile-alt"></i> +880 171 09 03 032 <br>
++880 168 61 95 607 </li>
+                                                             </ul>
                     </div>
                 </div>
             </div>
@@ -109,25 +69,16 @@
             <div class="grid align-center">
                 <div class="col-sm-12">
                     <div class="footer-bottom__copy">
-                        <p>&copy; 2023. All Rights Reserved.</p>
+                        <p>© 2026. All Rights Reserved.</p>
                     </div>
                 </div>
                 <!--
                 <div class="col-sm-8 text-right">
-                    <?php
-                        // wp_nav_menu(
-                        //     array(
-                        //         'theme_location' => 'menu-4',
-                        //         'menu_class'     => 'footer-bottom__menu',
-                        //     )
-                        // );
-                    ?>
-                </div>
+                                    </div>
                 -->
             </div>
         </div>
     </section>
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
