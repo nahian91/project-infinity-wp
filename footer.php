@@ -11,53 +11,98 @@
 
 ?>
 
-   <footer class="footer bg" style="background-image: url('assets/img/footer.jpg');">
+    <footer class="footer bg" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/footer.jpg' ) ); ?>');">
         <div class="container">
             <div class="grid">
+                <!-- Column 1: About -->
                 <div class="col-md-4 col-sm-6">
-                                        <div class="footer__single">
-                        <h4 class="footer__title">about company</h4>
-                        <p class="footer__desc">Only one door to knock for every software, website, and e-commerce solution for your business</p>
+                    <div class="footer__single">
+                        <h4 class="footer__title"><?php esc_html_e( 'About Company', 'ifs' ); ?></h4>
+                        <p class="footer__desc"><?php esc_html_e( 'Only one door to knock for every software, website, and e-commerce solution for your business', 'ifs' ); ?></p>
                         <div class="footer__social">
-                                                    </div>
+                            <!-- Add social icons or dynamic widget here -->
+                        </div>
                     </div>
                 </div>
+
+                <!-- Column 2: Quick Links -->
                 <div class="col-md-2 col-sm-6">
                     <div class="footer__single">
-                        <h4 class="footer__title">quick links</h4>
-                        <div class="menu-footer-1-container"><ul id="menu-footer-1" class="menu"><li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a href="https://infinityflamesoft.com/about-us/">About Us</a></li>
-<li id="menu-item-623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-623"><a href="https://infinityflamesoft.com/courses-2/">Courses</a></li>
-<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="https://infinityflamesoft.com/courses/">Courses</a></li>
-<li id="menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624"><a href="https://infinityflamesoft.com/projects/">Projects</a></li>
-<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="https://infinityflamesoft.com/?page_id=174">Teams-1</a></li>
-<li id="menu-item-625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-625"><a href="https://infinityflamesoft.com/contact/">Contact</a></li>
-<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="https://infinityflamesoft.com/services/">Services</a></li>
-<li id="menu-item-626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-626"><a href="https://infinityflamesoft.com/teams/">Teams</a></li>
-<li id="menu-item-627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627"><a href="https://infinityflamesoft.com/services-2/">Services</a></li>
-</ul></div>                    </div>
+                        <h4 class="footer__title"><?php esc_html_e( 'Quick Links', 'ifs' ); ?></h4>
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-2',
+                                'menu_id'        => 'menu-footer-1',
+                                'container'      => 'div',
+                                'container_class'=> 'menu-footer-1-container',
+                                'fallback_cb'    => function() {
+                                    ?>
+                                    <ul id="menu-footer-1" class="menu">
+                                        <li><a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>"><?php esc_html_e( 'About Us', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/courses/' ) ); ?>"><?php esc_html_e( 'Courses', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/projects/' ) ); ?>"><?php esc_html_e( 'Projects', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/teams/' ) ); ?>"><?php esc_html_e( 'Teams', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Services', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Contact', 'ifs' ); ?></a></li>
+                                    </ul>
+                                    <?php
+                                },
+                            )
+                        );
+                        ?>
+                    </div>
                 </div>
+
+                <!-- Column 3: Our Services -->
                 <div class="col-md-3 col-sm-6">
                     <div class="footer__single">
-                        <h4 class="footer__title">our services</h4>
-                        <div class="menu-footer-2-container"><ul id="menu-footer-2" class="menu"><li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="https://infinityflamesoft.com/?page_id=174">Teams-1</a></li>
-<li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="https://infinityflamesoft.com/contact/">Contact</a></li>
-<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="https://infinityflamesoft.com/courses/">Courses</a></li>
-<li id="menu-item-630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630"><a href="https://infinityflamesoft.com/teams/">Teams</a></li>
-<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-173 current_page_item menu-item-194"><a href="https://infinityflamesoft.com/contact-us/" aria-current="page">Contact Us</a></li>
-<li id="menu-item-631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-631"><a href="https://infinityflamesoft.com/about-us-2/">About Us</a></li>
-<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628"><a href="https://infinityflamesoft.com/courses-2/">Courses</a></li>
-</ul></div>                    </div>
+                        <h4 class="footer__title"><?php esc_html_e( 'Our Services', 'ifs' ); ?></h4>
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-3',
+                                'menu_id'        => 'menu-footer-2',
+                                'container'      => 'div',
+                                'container_class'=> 'menu-footer-2-container',
+                                'fallback_cb'    => function() {
+                                    ?>
+                                    <ul id="menu-footer-2" class="menu">
+                                        <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Web Development', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Software Solutions', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Mobile Apps', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/courses/' ) ); ?>"><?php esc_html_e( 'IT Training', 'ifs' ); ?></a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Support', 'ifs' ); ?></a></li>
+                                    </ul>
+                                    <?php
+                                },
+                            )
+                        );
+                        ?>
+                    </div>
                 </div>
+
+                <!-- Column 4: Contact Us -->
                 <div class="col-md-3 col-sm-6">
                     <div class="footer__single footer__single--contact">
-                        <h4 class="footer__title">contact us</h4>
+                        <h4 class="footer__title"><?php esc_html_e( 'Contact Us', 'ifs' ); ?></h4>
                         <ul>
-                                                                    <li class="footer__list"><i class="fa fa-map-marker-alt"></i> 513, Rangmohol Tower, <br> Bandor Bazar, Sylhet</li>
-                                                                            <li class="footer__list"><i class="fa-regular fa-envelope"></i> faisal.lu.ac@gmail.com <br>
-nahiansylhet@gmail.com</li>
-                                                                            <li class="footer__list"><i class="fa fa-mobile-alt"></i> +880 171 09 03 032 <br>
-+880 168 61 95 607 </li>
-                                                             </ul>
+                            <li class="footer__list">
+                                <i class="fa fa-map-marker-alt"></i> 
+                                <?php esc_html_e( '513, Rangmohol Tower,', 'ifs' ); ?><br>
+                                <?php esc_html_e( 'Bandor Bazar, Sylhet', 'ifs' ); ?>
+                            </li>
+                            <li class="footer__list">
+                                <i class="fa-regular fa-envelope"></i> 
+                                <a href="mailto:faisal.lu.ac@gmail.com">faisal.lu.ac@gmail.com</a><br>
+                                <a href="mailto:nahiansylhet@gmail.com">nahiansylhet@gmail.com</a>
+                            </li>
+                            <li class="footer__list">
+                                <i class="fa fa-mobile-alt"></i> 
+                                <a href="tel:+8801710903032">+880 171 09 03 032</a><br>
+                                <a href="tel:+8801686195607">+880 168 61 95 607</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -69,16 +114,14 @@ nahiansylhet@gmail.com</li>
             <div class="grid align-center">
                 <div class="col-sm-12">
                     <div class="footer-bottom__copy">
-                        <p>© 2026. All Rights Reserved.</p>
+                        <p>&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'All Rights Reserved.', 'ifs' ); ?></p>
                     </div>
                 </div>
-                <!--
-                <div class="col-sm-8 text-right">
-                                    </div>
-                -->
             </div>
         </div>
     </section>
+
+</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

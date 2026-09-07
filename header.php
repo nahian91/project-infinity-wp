@@ -52,7 +52,7 @@
         <div class="grid align-center">
             <div class="col-sm-2 col-6 col-bleed-y">
                 <a href="https://infinityflamesoft.com" class="header__logo">
-                    <img src="https://infinityflamesoft.com/wp-content/uploads/2026/01/logo.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="">
                 </a>
             </div>
             <div class="col-sm-10 col-bleed-y">

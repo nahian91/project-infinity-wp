@@ -4,7 +4,7 @@ Template Name: Home
 */
 get_header();?>
 
-<section class="bannar bg" style="background-image: url('https://infinityflamesoft.com/wp-content/themes/project-infinity-wp/assets/img/hero.jpg');">
+<section class="bannar bg" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/hero.jpg');">
    <div class="container">
       <div class="grid align-center">
          <div class="col-md-8">
@@ -13,8 +13,8 @@ get_header();?>
                <h1 class="bannar__title">Connecting DOTS <br> Creating LOGICS</h1>
                <p class="bannar__desc">Only one door to knock for every software, website, and e-commerce solution for your business 
 							</p>
-               <a href="https://www.gg.com" class="bannar__btn btn btn-primary">Our Services</a>
-               <a href="https://www.gg1.com" class="bannar__btn btn btn-secondary">Let’s Talk</a>
+               <a href="#" class="bannar__btn btn btn-primary">Our Services</a>
+               <a href="#" class="bannar__btn btn btn-secondary">Let’s Talk</a>
             </div>
          </div>
          <div class="col-md-4">
@@ -101,8 +101,8 @@ get_header();?>
             <div class="about__right">
                <span>Since <br> 2016</span>
                <div class="about__right-img">
-                  <img decoding="async" src="https://infinityflamesoft.com/wp-content/themes/project-infinity-wp/assets/img/about.jpg" alt="">
-                  <img decoding="async" src="https://infinityflamesoft.com/wp-content/themes/project-infinity-wp/assets/img/about-1.jpg" alt="">
+                  <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/about.jpg" alt="">
+                  <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/about-1.jpg" alt="">
                </div>
             </div>
          </div>
@@ -128,68 +128,54 @@ We have every kind of software solution for your business.</p>
 
 <div id="services-block_249db14122913464bc16ec650c6a6971" class="container services pb-80">
     <div class="grid">
-                                <div class="col-12 col-sm-4">
-                            <div class="services__single">
-                                
-                                
-                                                                            <img decoding="async" src="https://infinityflamesoft.com/wp-content/uploads/2026/01/pos.svg" alt="">
-                                                                        
-                                <h4 class="services__title">e-Commerce</h4>
-                                <p class="services__desc">Total Online Shopping system to start your dream e-Commerce shop.</p>
+        <div class="col-12 col-sm-4">
+            <div class="services__single">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/solutions/e-commerce.svg" alt="e-Commerce">
+                <h4 class="services__title">e-Commerce</h4>
+                <p class="services__desc">Total Online Shopping system to start your dream e-Commerce shop.</p>
+            </div>
+        </div>
 
-                                                            </div>
-                        </div>
-                                            <div class="col-12 col-sm-4">
-                            <div class="services__single">
-                                
-                                
-                                                                
-                                <h4 class="services__title">POS</h4>
-                                <p class="services__desc">Managing your grocery or pharmacy shop will be smother then ever.</p>
+        <div class="col-12 col-sm-4">
+            <div class="services__single">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/solutions/pos.svg" alt="POS">
+                <h4 class="services__title">POS</h4>
+                <p class="services__desc">Managing your grocery or pharmacy shop will be smother then ever.</p>
+            </div>
+        </div>
 
-                                                            </div>
-                        </div>
-                                            <div class="col-12 col-sm-4">
-                            <div class="services__single">
-                                
-                                
-                                                                
-                                <h4 class="services__title">ERP</h4>
-                                <p class="services__desc">Corporate Management will be 100% automated and paperless.</p>
+        <div class="col-12 col-sm-4">
+            <div class="services__single">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/solutions/erp.svg" alt="ERP">
+                <h4 class="services__title">ERP</h4>
+                <p class="services__desc">Corporate Management will be 100% automated and paperless.</p>
+            </div>
+        </div>
 
-                                                            </div>
-                        </div>
-                                            <div class="col-12 col-sm-4">
-                            <div class="services__single">
-                                
-                                
-                                                                
-                                <h4 class="services__title">Institute Manage</h4>
-                                <p class="services__desc">Total School &amp; University management system from course offering to attendance.</p>
+        <div class="col-12 col-sm-4">
+            <div class="services__single">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/solutions/institute-manage.svg" alt="Institute Manage">
+                <h4 class="services__title">Institute Manage</h4>
+                <p class="services__desc">Total School &amp; University management system from course offering to attendance.</p>
+            </div>
+        </div>
 
-                                                            </div>
-                        </div>
-                                            <div class="col-12 col-sm-4">
-                            <div class="services__single">
-                                
-                                
-                                                                
-                                <h4 class="services__title">Industrial System</h4>
-                                <p class="services__desc">Industry automation system to manufacturing records to worker manage.</p>
+        <div class="col-12 col-sm-4">
+            <div class="services__single">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/solutions/industrial-system.svg" alt="Industrial System">
+                <h4 class="services__title">Industrial System</h4>
+                <p class="services__desc">Industry automation system to manufacturing records to worker manage.</p>
+            </div>
+        </div>
 
-                                                            </div>
-                        </div>
-                                            <div class="col-12 col-sm-4">
-                            <div class="services__single">
-                                
-                                
-                                                                
-                                <h4 class="services__title">Website</h4>
-                                <p class="services__desc">We build Professional level amazing eye-catching website to draw more traffic and sales.</p>
-
-                                                            </div>
-                        </div>
-                        </div>
+        <div class="col-12 col-sm-4">
+            <div class="services__single">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/solutions/website.svg" alt="Website">
+                <h4 class="services__title">Website</h4>
+                <p class="services__desc">We build Professional level amazing eye-catching website to draw more traffic and sales.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <section id="counter-block_e0ec07a9e587c777b2f7542521b7b240" class="counter pt-60 pb-60 bg bg-cta" style="background-image:url('../assets/img/cta-bg.png');">
@@ -243,80 +229,89 @@ prospects across the entire web.</p>
       </div>
 </div>
 
-<div id="teams-block_1ea8dc59954b50b3d6b66e4a55f515f4" class="container teams pb-60">	
+<div id="teams-block_1ea8dc59954b50b3d6b66e4a55f515f4" class="container teams pb-60">   
     <div class="grid">
-                            <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Faisal Mohammed <span class="team__desg">Project Lead</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Abdullah Nahian<span class="team__desg">Front-end &amp; WordPress Developer</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Nazmul Hossain<span class="team__desg">Back End Developer</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Mohammed Rimon<span class="team__desg">Networking Administrator</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Jamal Hosen<span class="team__desg">Digital Marketer</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Md. Ariful Basher Abir<span class="team__desg">Web Designer (UI/UX)</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Hasan Misbah<span class="team__desg">Software Engineer</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-md-3">
-                        <div class="team__single">
-                            <div class="team__img" style="background-image: url('');"></div>
-                            <div class="team__content">
-                                <h4 class="team__title">Sukanta Showrov<span class="team__desg">Software Engineer</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
-                <div class="grid">
-                <div class="col-12 text-center mt-30">
-                <a href="https://localhost/ifs/teams/" class="btn btn-primary">
-                View All Members</a>
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/faisal-1.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Faisal Mohammed <span class="team__desg">Project Lead</span></h4>
                 </div>
             </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/nahian.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Abdullah Nahian <span class="team__desg">Front-end &amp; WordPress Developer</span></h4>
+                </div>
             </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Nazmul Hossain <span class="team__desg">Back End Developer</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/rimon-scaled.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Mohammed Rimon <span class="team__desg">Networking Administrator</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/jamal.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Jamal Hosen <span class="team__desg">Digital Marketer</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/Ariful_Basher_IFS.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Md. Ariful Basher Abir <span class="team__desg">Web Designer (UI/UX)</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/misbah-1.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Hasan Misbah <span class="team__desg">Software Engineer</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="team__single">
+                <div class="team__img" style="background-image: url('<?php echo esc_url( get_theme_file_uri( 'assets/img/teams/sukantho.webp' ) ); ?>');"></div>
+                <div class="team__content">
+                    <h4 class="team__title">Sukanta Showrov <span class="team__desg">Software Engineer</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col-12 text-center mt-30">
+            <a href="<?php echo esc_url( home_url( '/teams/' ) ); ?>" class="btn btn-primary">
+                <?php esc_html_e( 'View All Members', 'ifs' ); ?>
+            </a>
+        </div>
+    </div>
+</div>
 
             <section id="cta-block_9356a7bd994ec82e3e29c1fe64e237e0" class="cta pt-60 pb-60 bg bg-cta">
    <div class="container">
@@ -326,8 +321,8 @@ prospects across the entire web.</p>
             <p>Get a quote for free. It’s simple to fill out the form and your request is sent out automatically. </p>
          </div>
          <div class="col-12 col-sm-6 text-center">
-            <a href="https://www.google.com" class="btn btn-primary">See Projects</a>
-            <a href="https://www.google1.com" class="btn btn-secondary">Contact Us</a>
+            <a href="#" class="btn btn-primary">See Projects</a>
+            <a href="#" class="btn btn-secondary">Contact Us</a>
          </div>
       </div>
    </div>
@@ -340,31 +335,31 @@ prospects across the entire web.</p>
             <div class="process__list">
                                             <div class="process__single">
                                 <span class="process__number">01</span>
-                                <img decoding="async" src="" class="process__img" alt="">
+                                <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/process/ifs-steps-1.webp" class="process__img" alt="">
                                 <h4 class="process__title">Discuss Ideas</h4>
                                 <p class="process__desc">We discuss for better understandings of the client’s vision</p>
                             </div>
                                                         <div class="process__single">
                                 <span class="process__number">02</span>
-                                <img decoding="async" src="" class="process__img" alt="">
+                                <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/process/ifs-steps-2.webp" class="process__img" alt="">
                                 <h4 class="process__title">Data Collection</h4>
                                 <p class="process__desc">As per design brief we collect data and organize the server</p>
                             </div>
                                                         <div class="process__single">
                                 <span class="process__number">03</span>
-                                <img decoding="async" src="" class="process__img" alt="">
+                                <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/process/ifs-steps-3.webp" class="process__img" alt="">
                                 <h4 class="process__title">Research</h4>
                                 <p class="process__desc">Conduct intensive research to make perfect system for clients</p>
                             </div>
                                                         <div class="process__single">
                                 <span class="process__number">04</span>
-                                <img decoding="async" src="" class="process__img" alt="">
+                                <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/process/ifs-steps-4.webp" class="process__img" alt="">
                                 <h4 class="process__title">Develop</h4>
                                 <p class="process__desc">We use latest and up-to-date technology to build the systems</p>
                             </div>
                                                         <div class="process__single">
                                 <span class="process__number"></span>
-                                <img decoding="async" src="" class="process__img" alt="">
+                                <img decoding="async" src="<?php echo get_template_directory_uri();?>/assets/img/process/ifs-steps-5.webp" class="process__img" alt="">
                                 <h4 class="process__title">Help to Grow</h4>
                                 <p class="process__desc">We help to understand the proper use of the system and grow</p>
                             </div>
